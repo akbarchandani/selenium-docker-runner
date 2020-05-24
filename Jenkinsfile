@@ -1,5 +1,5 @@
 pipeline{
-	node WindowNode
+	agent {label 'WindowNode'}
 	stages{
 		stage("Pull Latest Image"){
 			steps{
