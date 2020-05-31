@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage("Pull Latest Image"){
 			steps{
-				bat "docker pull akbarchandani/selenium-docker"
+				bat "docker pull akbarchandani/selenium-docker-linux"
 			}
 		}
 		stage("Start Grid"){
