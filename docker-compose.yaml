@@ -16,7 +16,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module:
-    image: akbarchandani/selenium-docker
+    image: akbarchandani/selenium-docker-linux
     depends_on:
       - chrome
       - firefox
@@ -27,7 +27,7 @@ services:
     volumes:
       - //c/dockeroutput/output/search-result:/usr/share/udemy/test-output  
   book-flight-module:
-    image: akbarchandani/selenium-docker
+    image: akbarchandani/selenium-docker-linux
     depends_on:
       - chrome
       - firefox
