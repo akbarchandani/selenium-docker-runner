@@ -18,8 +18,7 @@ pipeline{
 		}
 	}
 	post{
-		always{
-			bat "Xcopy /E /I /Y C:\\Users\\akbar\\Documents\\Akbar\\dockeroutput\\output .\\output"
+		always{			
 			archiveArtifacts artifacts: 'output/**'
 			bat "docker-compose down"			
 		}
